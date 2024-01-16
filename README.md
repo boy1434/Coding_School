@@ -4,7 +4,7 @@ Product Owner : 홍수환
 
 Scrum Master : 김상진
 
-developer : 홍수환, 김상진, 이지은, 정상인
+developer : 홍수환, 김상진, 이지은, 정상인, 김수정
 
 사용 기술 : Html, Css, gitHub
 
