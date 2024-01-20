@@ -1,192 +1,190 @@
-
 /* 다음은 공통 스타일 입니다. */
-body{
-    margin: 0;
-    padding: 0;
-  }
-  .part{
-    display: inline-block;
-    background-color: blue;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 20px;
-    margin: 20px 0px;
-    font-size: 16px;
-  }
-  /* 강사소개 */
-  .teacher_area{
-    position: relative;
-  }
-  .teacher{
-    display: grid;
-    grid-template-columns: repeat(4,3fr);
-    column-gap: 20px;
-  }
-  .teacher_info{
-    display: none;
-    border: 1px solid;
-    position: fixed;
-    top: 20%;
-    left: 35%;
-    background-color: white;
-    padding: 12px 24px;
-    border-radius: 12px;
-    z-index: 100;
-  }
-  .teacher_info.active{
-    display: block;
-  }
-  .teacher_info ul{
-    padding: 10px 0px;
-    margin: 0;
-  }
-  .teacher_name{
-    cursor: pointer;
-  }
-  .teacher img{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .button_area{
-    text-align: center;
-  }
-  .teacher h2{
-    text-align: center;
-  }
-  .teacher h4{
-    text-align: center;
-  }
-  .teacher button{
-    border: none;
-    background: blue;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 12px;
-  }
-  /* 정상인 - 수강후기 */
-  .review_area{
-    margin-bottom: 20px;
-  }
-  .review_row{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 10px;
-  }
-  .review{
-    border: 1px solid;
-    border-radius: 12px;
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .review h4{
-    text-align: center;
-  }
-  .review h6{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 10px 0px;
-  }
-  .review_star{
-    color: yellow;
-  }
-  /* 정상인- 푸터 */
-  footer a{
-    text-decoration: none;
-    color: white;
-  }
-  footer{
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    color: white;
-    padding: 20px;
-  }
-  .footer_row{
-    text-align: center;
-  }
-  .footer_row > div{
-    display: flex;
-    flex-direction: column;
-  }
-  .footer_row a{
-    padding: 8px 12px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
+.part {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+/* 강사소개 */
+.teacher_area {
+  position: relative;
+}
+.teacher {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  column-gap: 20px;
+}
+.teacher_info {
+  display: none;
+  border: 1px solid;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  z-index: 100;
+}
+.teacher_info.active {
+  display: block;
+}
+.teacher_info ul {
+  padding: 10px 0px;
+  margin: 0;
+}
+.teacher_name {
+  cursor: pointer;
+}
+.teacher img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.button_area {
+  text-align: center;
+}
+.teacher h2 {
+  text-align: center;
+}
+.teacher h4 {
+  text-align: center;
+}
+.teacher button {
+  border: none;
+  background: blue;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+/* 정상인 - 수강후기 */
+.review_area {
+  margin-bottom: 20px;
+}
+.review_row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.review {
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review h4 {
+  text-align: center;
+}
+.review h6 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 10px 0px;
+}
+.review_star {
+  color: yellow;
+}
+/* 정상인- 푸터 */
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  color: white;
+  padding: 20px;
+}
+.footer_row {
+  text-align: center;
+}
+.footer_row > div {
+  display: flex;
+  flex-direction: column;
+}
+.footer_row a {
+  padding: 8px 12px;
+}
 /* 김상진 */
-.card_margin{
-    margin: 10px;
-    
+.card_margin {
+  margin: 10px;
 }
 
-.card_padding{
-    padding: 20px;
+.card_padding {
+  padding: 20px;
 }
-
 
 /* 홍수환 */
-.mo-show{
-    display:block !important;
+.mo-show {
+  display: block !important;
 }
 
 .gnb-right {
-    position: fixed;
-    right: 30px;
-    top: 25%;
-    width: 80px;
-    display: block;
-    z-index: 101;
-    background: #fff;
-    box-shadow: 6.6px 7.5px 24px 12px rgb(176 176 176 / 12%);
-    border-radius: 12px;
-    overflow: hidden;
+  position: fixed;
+  right: 30px;
+  top: 25%;
+  width: 80px;
+  display: block;
+  z-index: 101;
+  background: #fff;
+  box-shadow: 6.6px 7.5px 24px 12px rgb(176 176 176 / 12%);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .gnb-right h3 {
-    background: #27373f;
-    width: 100%;
-    font-size: 13px;
-    padding: 15px 0px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
+  background: #27373f;
+  width: 100%;
+  font-size: 13px;
+  padding: 15px 0px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
 }
 
 .gnb-right ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gnb-right ul li {
-    display: block;
-    border-bottom: 1px solid #eaeaea;
+  display: block;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .gnb-right ul li a {
-    display: flex;
-    width: 100%;
-    height: 74px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    text-decoration: none;
-    font-family: Pretendard, "sans-serif", dotum, �뗭�, gulim, 援대┝, Arial, AppleGothic, verdana, helvetica;
+  display: flex;
+  width: 100%;
+  height: 74px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  text-decoration: none;
+  font-family: Pretendard, "sans-serif", dotum, �뗭�, gulim, 援대┝, Arial,
+    AppleGothic, verdana, helvetica;
 }
 
 .gnb-right ul li a img {
-    width: 30px;
+  width: 30px;
 }
 
 .gnb-right ul li a h4 {
-    font-weight: 500;
-    font-size: 12px;
-    margin-top: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 3px;
 }
 
 /* h4 {
@@ -198,37 +196,60 @@ body{
     font-weight: bold;
 } */
 
-
-a{
-    background: transparent;
-    cursor: pointer;
+a {
+  background: transparent;
+  cursor: pointer;
 }
 
-
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-
 
 /* modal overlay */
-.overlay.active{
+.overlay.active {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 여기서 rgba의 마지막 값은 투명도를 나타냄 */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* 여기서 rgba의 마지막 값은 투명도를 나타냄 */
   display: block;
   z-index: 99;
 }
 
 /* 상진 CSS*/
-.card-text-padding{
-    
-    display: flex;
-    justify-content: center;
+.card-text-padding {
+  display: flex;
+  justify-content: center;
+}
+
+/*이지은*/
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 세로 정렬 (가운데 정렬) */
+  height: 100%;
+  font-weight: bold;
+  place-items: center;
+}
+
+.navbar-nav li {
+  margin: 0 10px; /* 간격 조절 */
+}
+
+.d-flex form {
+  padding-right: 20px;
+}
+
+.bg-primary {
+  margin-bottom: 30px;
 }
