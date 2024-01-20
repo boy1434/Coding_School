@@ -292,25 +292,9 @@ input{
 }
 
 
-/*이지은*/
-.navbar-nav {
-display: flex;
-justify-content: center;
-align-items: center; /* 세로 정렬 (가운데 정렬) */
-height: 100%;
-font-weight: bold;
-place-items: center;
+.navbar-nav { 
+  display: flex; justify-content: center; align-items: center; 
+  /* 세로 정렬 (가운데 정렬) */ height: 100%; font-weight: bold; }
+.navbar-nav li { margin: 0 10px; /* 간격 조절 */ 
 }
-
-.navbar-nav li {
-margin: 0 10px; /* 간격 조절 */
-}
-
-.d-flex form {
-padding-right: 20px;
-}
-
-.bg-primary {
-margin-bottom: 30px;
-}
-
+.bg-primary { margin-bottom: 30px; }
