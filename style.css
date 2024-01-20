@@ -240,6 +240,58 @@ display: flex;
 justify-content: center;
 }
 
+.login_form{
+  padding: 20px;
+  
+  height: 500px;
+  height: 700px;
+  
+  display: flex;
+  justify-content: center;
+  background-color: skyblue;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.login_box{
+  background-color: white;
+  border: 1px solid #eaeaea;
+  height: 500px;
+  width: 400px;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input{
+  background-color: #eaeaea;
+  border-width: 0px 0px 1px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.id_box{
+  margin-bottom: 10px;
+}
+.pw_box{
+  margin-bottom: 10px;
+}
+.login_button{
+  margin: 10px;
+}
+
+.lost_pw > a {
+  text-decoration: none;
+}
+
+.back_to_home > a {
+  text-decoration: none;
+}
+
+
 /*이지은*/
 .navbar-nav {
 display: flex;
