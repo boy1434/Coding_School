@@ -227,6 +227,16 @@ li {
 }
 
 /* 상진 CSS*/
+<<<<<<< HEAD
+.card-text-padding{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+
+=======
 .card-text-padding {
   display: flex;
   justify-content: center;
@@ -253,3 +263,4 @@ li {
 .bg-primary {
   margin-bottom: 30px;
 }
+>>>>>>> main
