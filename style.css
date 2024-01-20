@@ -225,3 +225,10 @@ li{
   display: block;
   z-index: 99;
 }
+
+/* 상진 CSS*/
+.card-text-padding{
+    
+    display: flex;
+    justify-content: center;
+}
