@@ -11,51 +11,61 @@
   <div class="overlay"></div>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-     <div class="container-fluid"> 
-      <a class="navbar-brand" href="index.html"> 
-        <img src="https://cdn-icons-png.flaticon.com/512/4344/4344987.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> 
-        <i class="fas fa-pen">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4344/4344987.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <i class="fas fa-pen"></i>
+        Coding School
+      </a>
+      <!--부트스트랩 토글바 생성-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teacher_area">SELECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculum">STUDY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#review_area">REVIEW</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a class="nav-link" href="./loginForm.html" style="margin-right: 30px"
+            >login</a
+          >
+          <a
+            class="nav-link"
+            href="./registerForm.html"
+            style="margin-right: 30px"
+          >
+            join</a
+          >
+        </div>
+      </div>
 
-        </i> Coding School </a> 
-        <!--부트스트랩 토글바 생성--> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" > 
-          <span class="navbar-toggler-icon">
-
-          </span> 
-        </button> 
-        <div class="navbar-center collapse navbar-collapse" id="navbarSupportedContent" >
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-            <li class="nav-item">
-               <a class="nav-link active" aria-current="page" href="#">
-                ABOUT
-              </a> 
-            </li> 
-            <li class="nav-item"> 
-              <a class="nav-link" href="#teacher_area">
-                SELECT
-              </a>
-             </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="#curriculum">
-                  STUDY
-                </a>
-               </li> 
-               <li class="nav-item">
-                 <a class="nav-link" href="#review_area">
-                  REVIEW
-                </a>
-               </li>
-               </ul>
-               </div> 
-               <div class="d-flex"> <a class="nav-link" href="loginForm.html" style="margin-right: 20px">
-                login
-              </a> 
-              <a class="nav-link" href="registerForm.html" style="margin-right: 20px"> 
-                join
-              </a> 
-            </div> 
-          </div> 
-        </nav>
+    </div>
+  </nav>
   <!-- navbar 종료 -->
   <div class="container">
     <!-- 학원소개 -->
@@ -142,7 +152,7 @@
     </main>
     <!-- 사이드 스크롤바 종료 -->
     <!-- 강사소개 -->
-    <div class="teacher_area">
+    <div class="teacher_area" id="teacher_area">
       <h3 class="part">강사소개</h3>
       <div class="teacher">
         <div>
@@ -171,10 +181,10 @@
     <!-- 강사소개 종료 -->
     <!-- 커리큘럼 -->
     <!-- 상진님 row태그 전체를 따로 커리큘럼 태그만들어서 안에다가 넣어놨습니다 css만들때 참고해주세요 -->
-    <div class="curriculum ">
+    <div class="curriculum " id="curriculum">
       <h3 class="part">커리큘럼</h3>
       <div class="row card-text-padding ">
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-4 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/public/courses/329946/cover/29659d88-4456-435c-a687-001797b74928/329946-eng.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Html CSS 강의</h5>
@@ -183,7 +193,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://images.velog.io/images/hyeonseop/post/364bb35a-af26-4c37-a540-8cc7b7067264/js.jpeg" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Java Script 강의 </h5>
@@ -193,7 +203,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/public/courses/331954/cover/7d6c16a9-d3ac-4e7c-97ec-8520578a254a/331954-eng.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">React 강의</h5>
@@ -202,7 +212,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://kdydesign.github.io/2017/07/15/nodejs-npm-tutorial/cover.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Node.js 강의</h5>
@@ -211,7 +221,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/public/courses/329831/cover/c004e4c3-e44b-42bc-84c8-cc68b5f33be6/329831-eng.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Block Chain 강의</h5>
@@ -220,7 +230,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://images.velog.io/images/jnine/post/e99ee429-34e0-4863-986c-4ec7b85de0ba/image.png" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Python 강의</h5>
@@ -229,7 +239,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://www.hackershrd.com/lms/data/file/B01/168431672_PxMJfiwE_EC9E90EBB094.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">JAVA 강의</h5>
@@ -238,7 +248,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/public/files/courses/327918/628ca56f-ab9d-4c00-aa26-5ffae44abae6/325969-eng.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Spring Boot 강의</h5>
@@ -247,7 +257,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/wp-content/uploads/django4.jpg" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Django 강의</h5>
@@ -256,7 +266,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/wp-content/uploads/git-3.jpg" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Git, GitHub 강의</h5>
@@ -265,7 +275,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://velog.velcdn.com/images/zeroequaltwo/post/a4c17882-63ac-4a4b-a7c7-a5943fe7675e/image.png" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Next.js 강의</h5>
@@ -274,7 +284,7 @@
           </div>
         </div>
   
-        <div class="card col-lg-3 col-md-3 col-sm-6 card_padding card_margin" style="width: 22rem;">
+        <div class="card col-lg-3 col-md-4 col-sm-6 card_padding card_margin" style="width: 22rem;">
           <img style="width: 326px; height: 260px; border-radius: 14px;" src="https://cdn.inflearn.com/public/course-325850-cover/7c824ded-b644-4421-8ddd-2197367ab0ea" class="card-img-top ">
           <div class="card-body">
             <h5 class="card-title">Doker 강의</h5>
@@ -286,7 +296,7 @@
     </div>
     <!-- 커리큘럼 종료 -->
     <!-- 리뷰 -->
-    <div class="review_area">
+    <div class="review_area" id="review_area">
       <h3 class="part">수강후기</h3>
       <div class="review_row">
         <div class="review">
